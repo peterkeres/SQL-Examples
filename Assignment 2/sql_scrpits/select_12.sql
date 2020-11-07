@@ -1,0 +1,5 @@
+SELECT studentID, courseNumber
+FROM  COURSE, ENROLLMENT
+WHERE ENROLLMENT.grade IS NOT NULL AND ENROLLMENT.courseID = COURSE.courseID 
+ORDER BY studentID ASC, courseNumber DESC
+;
